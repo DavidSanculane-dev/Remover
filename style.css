@@ -113,3 +113,128 @@ body {
 #resultImage {
     margin: 20px 0;
 }
+
+.footer {
+    background: var(--clr-black);
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .footer-text {
+    color: var(--clr-grey-10);
+    /* line-height: 1; */
+    margin-bottom: 0;
+  }
+
+ /* 
+======================
+NAVBAR
+======================
+*/
+
+
+  nav {
+    background: var(--clr-body-bcg);
+    padding: 1rem;
+    z-index: 100;
+  }
+  .nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-body-bcg);
+    box-shadow: var(--light-shadow);
+  }
+  .nav-center {
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    font-size: 2rem;
+    color: var(--clr-primary);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    outline: none;
+    transform: rotate(90deg);
+    animation: bounce 2s linear infinite;
+    line-height: 0;
+  }
+  .nav-btn:hover {
+    color: var(--clr-secondary);
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .logo {
+    color: var(--clr-primary);
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px var(--clr-font);
+    font-family: 'Acme', sans-serif;
+    /* align-self: center; */
+    /* justify-self: center; */
+    transition: var(--transition);
+  }
+  .logo span {
+    opacity: 0.9;
+  }
+  .logo:hover {
+    color: var(--clr-secondary);
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    max-width: 480px;
+    padding: 0 1rem;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    font-weight: bold;
+    /* text-shadow: 1px 2px 2px var(--clr-font); */
+    transition: var(--transition);
+    letter-spacing: 2px;
+    padding: 0.1rem 0;
+    border-bottom: 2px solid transparent;
+  }
+  .nav-link:hover {
+    color: var(--clr-secondary);
+    border-color: var(--clr-secondary);
+  }
+  
+  @media screen and (min-width: 792px) {
+    nav {
+      background: var(--nav-bcg);
+    }
+    .nav-center {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+    }
+    .nav-btn {
+      display: none;
+    }
+    .nav-links {
+      justify-self: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+  }
