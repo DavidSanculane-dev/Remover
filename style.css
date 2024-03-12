@@ -130,8 +130,6 @@ body {
 NAVBAR
 ======================
 */
-
-
   nav {
     background: var(--clr-body-bcg);
     padding: 1rem;
@@ -181,7 +179,7 @@ NAVBAR
     }
   }
   .logo {
-    color: var(--clr-primary);
+    color: var(--clr-black);
     font-size: 1.75rem;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px var(--clr-font);
@@ -193,9 +191,7 @@ NAVBAR
   .logo span {
     opacity: 0.9;
   }
-  .logo:hover {
-    color: var(--clr-secondary);
-  }
+  
   .nav-links {
     display: none;
     width: 100%;
@@ -211,10 +207,6 @@ NAVBAR
     letter-spacing: 2px;
     padding: 0.1rem 0;
     border-bottom: 2px solid transparent;
-  }
-  .nav-link:hover {
-    color: var(--clr-secondary);
-    border-color: var(--clr-secondary);
   }
   
   @media screen and (min-width: 792px) {
@@ -233,7 +225,7 @@ NAVBAR
       justify-self: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
     }
     
